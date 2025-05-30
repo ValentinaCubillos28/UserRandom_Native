@@ -11,7 +11,8 @@ import { auth } from './firebase/firebaseConfig';
 import Login from './src/componentes/Login';
 import Registro from './src/componentes/Registro';
 import Home from './src/componentes/Home';
-import Original from './src/componentes/Original';
+import Explorar from './src/componentes/Explorar';
+import ChatScreen from './src/componentes/Chat';
 import Perfil from './src/componentes/Perfil';
 import Logout from './src/componentes/Logout';
 
@@ -47,7 +48,8 @@ export default function App() {
         {usuario ? (
           <>
             <Tab.Screen name="Home" component={Home} />
-            <Tab.Screen name="Original" component={Original} />
+            <Tab.Screen name="Explorar" component={Explorar} />
+            <Tab.Screen name="Chat" component={ChatScreen} />
             <Tab.Screen name="Perfil" component={Perfil} />
             <Tab.Screen name="Logout" component={Logout} />
           </>
